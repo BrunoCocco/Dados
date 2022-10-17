@@ -28,12 +28,16 @@
     <section class="container">
         <div class="row">
             <button id="tirar-dado" class="mt-4 btn btn-light col-md-2 col-sm-4 col-xs-6">Tirar</button>
+            <button id="borrar-dado" class="mt-4 btn btn-danger offset-md-7 col-md-2 col-sm-4 col-xs-6">Tirar</button>
         </div>
     </section>
+
+    <!-- printear Numero en el Dom. -->
+    
     <section class="container">
         <div class="row">
-            <div id="printear--dado" class="col-md-6 offset-md-3 bg-light">
-            </div>
+            <h1 id="printear--dado" class="col-md-6 offset-md-3 bg-light">
+            </h1>
         </div>
     </section>
     <footer class=" container-fluid">
@@ -43,6 +47,24 @@
             </div>
         </div>
     </footer>
+
+    <!--  ¡¡¡¡¡    Holiis te dejo el componente Js por aca !!!!!
+
+    const nuevaTirada = document.getElementById("tirar-dado");
+    nuevaTirada.addEventListener("click", () => {
+    console.log("click")
+    let numeroDado = parseInt(Math.random() * 6 + 1)
+    console.log(numeroDado)
+    let printDado = document.getElementById("printear--dado")
+    printDado.append(`
+    ${numeroDado}
+    `)
+})
+
+    Esto de aca abajo lo injecta LiveServer para su proceso de render!! ignoralo...   -->
+
+
+
 </body>
 
 </html>

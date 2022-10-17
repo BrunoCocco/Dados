@@ -8,3 +8,10 @@ nuevaTirada.addEventListener("click", () => {
     ${numeroDado}
     `)
 })
+
+const borrarTirada = document.getElementById("borrar-dado");
+borrarTirada.addEventListener("click", () => {
+    console.log(borrarTirada)
+    let printDado = document.getElementById("printear--dado")
+    printDado.remove()
+})
